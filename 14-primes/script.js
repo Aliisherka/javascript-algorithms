@@ -7,10 +7,33 @@
 */
 
 function primes(num) {
-    // Напишите код здесь
+    const number = [];
+    const b = [];
+    for (let i = 2; i <= num; i++) {
+        number.push(i);
+    }
+    console.log(number);
+
+    for (let i = 0; i < number.length; i++) {
+        if ((number[i] > 1 && number[i] < 4) || ((number[i] % 2 !== 0) && (number[i] % 3 !== 0))) {
+                b.push(number[i]);
+        }
+    }
+
+    return num = b;
+
+    //формула рабочая. я просто не знаю кому возвращать правильный ответ
+    //number.forEach(function (item) {
+    //    if (item > 3 && ((item % 2 === 0) || (item % 3 === 0)))  {
+    //        
+    //    } else {
+    //        b.push();  здесю
+    //    }
+    //});
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
-console.log(primes(6)); // [2, 3, 5]
-console.log(primes(17)); // [2, 3, 5, 7, 11, 13, 17]
+//console.log(primes(6)); // [2, 3, 5]
+//console.log(primes(17)); // [2, 3, 5, 7, 11, 13, 17]
+console.log(primes(25)); // [2, 3, 5, 7, 11, 13, 17]

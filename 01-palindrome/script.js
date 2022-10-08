@@ -14,7 +14,11 @@
 */
 
 function palindrome(str) {
-    // Напишите код здесь
+    if (str.toLowerCase() === str.toLowerCase().split("").reverse().join("")) {   
+        return true;
+    } else {
+        return false;
+    }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
@@ -22,6 +26,7 @@ function palindrome(str) {
 console.log(palindrome('топот')); // должно быть true
 console.log(palindrome('Saippuakivikauppias')); // true
 console.log(palindrome('привет')); // false
+
 
 /*
  * Бонус. Задача для любознательных. Пусть функция принимает на вход любую строку,

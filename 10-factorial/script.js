@@ -8,8 +8,21 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+    const number = [];
+    for (let i = 1; i <= n; i++) {
+        number.push(i);
+    }
+
+    if (n === 0) {
+        return 1;
+    } else {
+    const product = number.reduce(function (previousValue, item) {
+        return previousValue * item;
+    });
+    return product;
+    }
 }
+
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

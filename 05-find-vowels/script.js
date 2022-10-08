@@ -10,11 +10,13 @@
 */
 
 function findVowels(str) {
-    // Напишите код здесь
+    let vowels = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'];
+    str = str.split('')
+    console.log(str);
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(findVowels('здравствуй')); // 2
-console.log(findVowels('привет')); // 2
-console.log(findVowels('хеллоу')); // 3
+//console.log(findVowels('привет')); // 2
+//console.log(findVowels('хеллоу')); // 3
