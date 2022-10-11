@@ -10,11 +10,15 @@
 */
 
 function isPrime(n) {
-    if (n < 2 || (n > 3 && ((n % 2 === 0) || (n % 3 === 0))))  {
+    if (n < 2) {
         return false;
-    } else {
-        return true;
     }
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

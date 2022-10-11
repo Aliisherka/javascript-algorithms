@@ -6,17 +6,17 @@
  *
 */
 
-function capitalize(str) {
-    str = str.split(' ');
+//function capitalize(str) {
+//    str = str.split(' ');
 
-    for (let i = 0; i < str.length; i++) {
-        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
-    }
+//    for (let i = 0; i < str.length; i++) {
+//        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+//    }
 
-    str = str.join(' ');
+//    str = str.join(' ');
 
-    return str;
-}
+//    return str;
+//}
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
